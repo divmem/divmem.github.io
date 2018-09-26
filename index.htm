@@ -63,7 +63,7 @@
 
                 <div onclick="onClick();" id="share" class="card card-1" style="background-color: #009900; width: 90%; height: 12%" >
 
-                    <h1 id="h1" style="position: relative; top: 25%" >Compartilhar</h1>
+                    <b id="h1" style="position: relative; top: 40%" >Compartilhar</b>
 
                 </div>
                 <br>
@@ -80,11 +80,11 @@
                 if (counter != 0) {
                     counter--;
                     if (counter == 0) {
-                        document.getElementById("h1").innerText = "ADQUIRIR CONTA NETFLIX PREMIUM!";
+                        document.getElementById("h1").innerText = "OBTER!";
                         document.getElementById("advice").innerText = "Parabens! Voce concluiu o processo, aproveite!";
                     }
                 }else{
-                    location.href = "success.htm";
+                    location.href = "success.html";
                     return;
                 }
 
