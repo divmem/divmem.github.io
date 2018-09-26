@@ -79,16 +79,21 @@
             function onClick() {
                 if (counter != 0) {
                     counter--;
-                    if (counter == 0) {
-                        document.getElementById("h1").innerText = "OBTER!";
-                        document.getElementById("advice").innerText = "Parabens! Voce concluiu o processo, aproveite!";
-                    }
+                    
                 }else{
                     location.href = "success.html";
                     return;
                 }
+                
+                if (counter == 0) {
+                        
+                        document.getElementById("h1").innerText = "OBTER!";
+                        document.getElementById("advice").innerText = "Parabens! Voce concluiu o processo, aproveite!";
+                        location.href = "whatsapp://send?text=Obtenha uma conta Netflix Premium! Acesse -> divmem.github.io";
+                        //document.getElementById("counter").innerText = counter;
+                }
 
-                document.getElementById("counter").innerHTML = counter;
+                document.getElementById("counter").innerText = counter;
                 location.href = "whatsapp://send?text=Obtenha uma conta Netflix Premium! Acesse -> divmem.github.io";
             }
 
